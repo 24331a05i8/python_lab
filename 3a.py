@@ -1,0 +1,12 @@
+import numpy as np
+marks = np.array([9, 5, 6, 7, 8, 3, 7, 9])
+avg = np.mean(marks)
+print("Marks:", marks)
+print("Class Average:", avg)
+print("Highest marks:", np.max(marks))
+print("Lowest marks:", np.min(marks))
+print("Pass students index:", np.where(marks >= 4))
+print("Fail students index:", np.where(marks < 4))
+print("Below average index:", np.where(marks < avg))
+print("above average index:", np.where(marks > avg ))
+print("Equal to 5 index:", np.where(marks == 5))
